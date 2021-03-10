@@ -1,0 +1,15 @@
+<div class="page-header">
+  <%= link_to tweets_path, class: 'btn btn-default' do %>
+    All Tweets
+  <% end %>
+  <%= link_to edit_tweet_path(@tweet), class: 'btn btn-primary' do %>
+    Edit
+  <% end %>
+  <h1>Show tweet</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Body:</dt>
+  <dd><%= @tweet.body %></dd>
+
+</dl>

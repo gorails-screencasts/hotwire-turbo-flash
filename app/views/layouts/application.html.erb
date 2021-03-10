@@ -8,7 +8,10 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/notices' %>
 
-    <div class="container">
+    <div class="container position-relative">
+      <div id="toasts" style="position: absolute; top: 0; right: 0;">
+      </div>
+
       <%= yield %>
     </div>
 
